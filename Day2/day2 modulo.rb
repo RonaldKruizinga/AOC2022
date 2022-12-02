@@ -1,13 +1,3 @@
-require 'ruby-enum'
-
-class RESULT
-  include Ruby::Enum
-
-  define :LOSS, 1
-  define :DRAW, 2
-  define :WIN, 3
-end
-
 def get_score_for_result(result)
   result * 3
 end
